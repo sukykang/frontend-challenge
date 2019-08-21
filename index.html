@@ -2,9 +2,53 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BusyBus</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
+    <div class="container">
+      <div class="status">
+        <img src="images/time-stamp.png" class="left-align">
+        <img src="images/status-bar-icons.png" class="right-align">
+      </div>
+      <div class="nav">
+        <!-- icon would be wrapped in <a> tag to link to previous page -->
+        <img src="images/icon-back.png" class="left-align main-icon">
+        <!-- icon would be wrapped in <a> tag to refresh page content -->
+        <img src="images/icon-refresh.png" class="right-align main-icon">
+        <h1>State St. & Washington St.</h1>
+        <br class="mobile-only">
+        <h2>(Northbound)</h2>
+        <br>
+        <div class="distance-to">
+          <img src="images/footsteps.png">
+          <!-- <span> below would be variable that changes depending on user's location relative to bus stop -->
+          <h3>~<span>5 </span>min from current location</h3>
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d528.1438564077934!2d-87.62903601337484!3d41.88283781016416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cbad40c9143%3A0xf9625c22f5d03e7e!2sWashington+%26+State!5e0!3m2!1sen!2sus!4v1566363120500!5m2!1sen!2sus" width="100%" frameborder="0" style="border:0"></iframe>
+      </div>
+      <div class="bus-list">
+        <ul class="left-align">
+          <li class="direction">Eastbound</li>
+            <li class="bus-info"><span class="bus-number">60</span><span class="destination">Randolph/Harbor Dr</span><span class="frequency right-align">Every<br class="mobile-only"> 20 mins</span></li>
+            <li class="bus-info"><span class="bus-number">124</span><span class="destination">Navy Pier</span><span class="frequency right-align">Every<br class="mobile-only"> 10 mins</span></li>
+          <li class="direction">Northbound</li>
+            <li class="bus-info"><span class="bus-number">151</span><span class="destination">Devon/Clark</span><span class="frequency right-align">Every<br class="mobile-only"> 16 mins</span></li>
+          <li class="direction">Southbound</li>
+            <li class="bus-info"><span class="bus-number">J14</span><span class="destination">103rd/Stony Island</span><span class="frequency right-align">Every<br class="mobile-only"> 15 mins</span></li>
+            <li class="bus-info"><span class="bus-number">124</span><span class="destination">Navy Pier</span><span class="frequency right-align">Every<br class="mobile-only"> 10 mins</span></li>
+          <li class="direction">Reroute</li>
+            <li class="bus-info"><span class="bus-number">6x</span><span class="destination">Jackson Park Express</span><span class="frequency right-align">Not<br class="mobile-only"> available</span></li>
+          <li class="direction">Out of Service</li>
+            <li class="bus-info"><span class="bus-number">4</span><span class="destination">Cottage Grove</span><span class="frequency right-align">Resumes<br class="mobile-only"> 12:10am</span></li>
+            <li class="bus-info"><span class="bus-number">20</span><span class="destination">Madison</span><span class="frequency right-align">Resumes<br class="mobile-only"> 12:10am</span></li>
+            <li class="bus-info"><span class="bus-number">157</span><span class="destination">Streeterville/Taylor</span><span class="frequency right-align">Resumes<br class="mobile-only"> 6:00am</span></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
