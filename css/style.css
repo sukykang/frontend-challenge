@@ -5,9 +5,6 @@
 body {
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-div {
   background-color: #f9f9f9;
   text-align: center;
 }
@@ -40,9 +37,12 @@ iframe {
   height: 100%;
 }
 
-span {
-  text-align: center;
-  line-height: 30px;
+main {
+  padding-top; 20px;
+}
+
+nav {
+  padding: 0px 20px 15px 20px;
 }
 
 ul {
@@ -58,31 +58,39 @@ ul {
   float: right;
 }
 
+/* indicators of status */
+.on-time {
+  color: #407941;
+}
+
+.late {
+  color: #9F4040;
+}
+
 /* only applies to specific elements */
+.arrival {
+  text-align: center;
+  font-size: .9em;
+}
 
 .bus-info {
   background-color: #ffffff;
-  padding: 15px 15px 15px 10px;
+  padding: 20px 15px 20px 10px;
   width: 100%;
   border-bottom: 1px solid #DCDFE4;
-}
-
-.bus-list {
-  overflow-y: scroll;
-  max-height: 100%;
 }
 
 .bus-number {
   font-size: 1.75em;
   font-weight: 700;
-  text-align: center;
-  padding: 0px 10px 0px 5px;
+  padding-left: 5px;
 }
 
 .destination {
   left: 80px;
   position: absolute;
-  font-size: 1.25em;
+  font-size: 1.2em;
+  margin-top: -5px;
 }
 
 .direction {
@@ -98,9 +106,10 @@ ul {
 }
 
 .frequency {
-  font-size: .85em;
-  line-height: 15px;
-  text-align: center;
+  font-size: .8em;
+  position: absolute;
+  left: 80px;
+  padding-top: 20px;
   color: #5c7080;
 }
 
@@ -116,24 +125,27 @@ ul {
   border-bottom: 1px solid #DCDFE4;
 }
 
-.nav {
-  padding: 0px 20px 15px 20px;
-}
-
 .status {
   height: 45px;
   padding: 15px 15px 10px 15px;
 }
 
+.tiny-icon {
+  width: 15px;
+  vertical-align: middle;
+  margin-top: -1px;
+  margin-right: 3px;
+}
+
 /* responsive */
 
 @media screen and (min-width: 575px) {
-  .destination {
-    left: 100px;
+  .arrival {
+    margin-top: 6px;
   }
 
-  .frequency {
-    line-height: 30px;
+  .destination, .frequency {
+    left: 100px;
   }
 
   .map {
@@ -146,7 +158,7 @@ ul {
 }
 
 @media screen and (min-width: 991px) {
-  .container {
+  nav {
     padding-top: 20px;
   }
 
